@@ -55,3 +55,27 @@ We created a website where an "Article of the Day" is generated and the user can
 * Sequelize
 * EJS
 
+## MVP (Minimum Viable Product):
+
+* Login and registration page for the user with authentication
+* News articles for specific categories
+* Comment box for user
+
+## Stretch Goals
+
+* Like button for users
+
+## Challenges and Solutions:
+
+<strong> Challenge: </strong> alksdjflkajsdlfkjaslkdfjakd asdlkfjalksdjf hksdjf habkjasdfasdnf nakdsfhaklsdjf nnd nsj flkjeieonc kslkdjf
+
+<strong> Solution: </strong> alksdjflkajsdlfkjaslkdfjakd asdlkfjalksdjf hksdjf habkjasdfasdnf nakdsfhaklsdjf nnd nsj flkjeieonc kslkdjf
+
+<strong> Solution: </strong> alksdjflkajsdlfkjaslkdfjakd asdlkfjalksdjf hksdjf habkjasdfasdnf nakdsfhaklsdjf nnd nsj flkjeieonc kslkdjf
+
+<strong> Solution: </strong> alksdjflkajsdlfkjaslkdfjakd asdlkfjalksdjf hksdjf habkjasdfasdnf nakdsfhaklsdjf nnd nsj flkjeieonc kslkdjf
+
+## Code Snippets
+
+## Screenshots
+
