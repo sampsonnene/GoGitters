@@ -1,6 +1,5 @@
 ## Backend Project
-***install 
-
+install
 ejs
 cookie-session
 express
@@ -10,7 +9,6 @@ sequelize
 pg pg-hstore
 bcryptjs
 set express app
-
 public folder
 views folder
 routes folder
@@ -19,7 +17,6 @@ registration.js
 index.js
 app.js
 Registration
-
 create form
 gather information from submitted form and insert data to db
 post route
@@ -27,7 +24,6 @@ parser to get info from header
 registering username, and password
 bcrypt to encrypt password
 Build DB (sequelize)
-
 user table: username, password, email
 run sequelize init
 configure db inside config/config.json
@@ -38,11 +34,6 @@ freeze table name (optional)
 setup associations - inside models folder
 modify migration to reflect foreign key (REFERENCES)
 run migration (sequelize db:migrate)
-
-
-
-
-
 
 
 
@@ -86,7 +77,7 @@ Primary team role: xxx xxx xx xxx x
 - Format login homepage
      * Express for HTTP framework
 
-- Create database in PostgeSQL
+- Create database in PostgreSQL
      * 3 tables with model classes
      * 2 tables related via foreign keys
 
