@@ -90,7 +90,7 @@ We created a website where an "Article of the Day" is generated and the user can
 * Node.js
 * Express
 * Sequelize
-* EJS
+* ejs
 
 
 ## MVP (Minimum Viable Product):
