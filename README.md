@@ -38,7 +38,6 @@ Primary team role: HTML, CSS
 Primary team role: HTML, CSS
 
 
-
 ## About The Project
 
 We created a website where an "Article of the Day" is generated and the user can read the article and comment if they like. The main page prompts the user to login or register and then they are redirected to the article.
@@ -55,6 +54,7 @@ We created a website where an "Article of the Day" is generated and the user can
 * Sequelize
 * EJS
 
+
 ## MVP (Minimum Viable Product):
 
 * Login and registration page for the user with authentication
@@ -65,15 +65,14 @@ We created a website where an "Article of the Day" is generated and the user can
 
 * Like button for users
 
+
 ## Challenges and Solutions:
 
-<strong> Challenge: </strong> alksdjflkajsdlfkjaslkdfjakd asdlkfjalksdjf hksdjf habkjasdfasdnf nakdsfhaklsdjf nnd nsj flkjeieonc kslkdjf
+<strong> Challenge: </strong> APIs and stuff
+<strong> Solution: </strong> Teamwork
 
-<strong> Solution: </strong> alksdjflkajsdlfkjaslkdfjakd asdlkfjalksdjf hksdjf habkjasdfasdnf nakdsfhaklsdjf nnd nsj flkjeieonc kslkdjf
-
-<strong> Solution: </strong> alksdjflkajsdlfkjaslkdfjakd asdlkfjalksdjf hksdjf habkjasdfasdnf nakdsfhaklsdjf nnd nsj flkjeieonc kslkdjf
-
-<strong> Solution: </strong> alksdjflkajsdlfkjaslkdfjakd asdlkfjalksdjf hksdjf habkjasdfasdnf nakdsfhaklsdjf nnd nsj flkjeieonc kslkdjf
+<strong> Challenge: </strong> xyz
+<strong> Solution: </strong> abcs
 
 ## Code Snippets
 

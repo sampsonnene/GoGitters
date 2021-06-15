@@ -4,26 +4,32 @@ const helmet = require('helmet')
 let PORT = 3000;
 const cookieSession = require('cookie-session');
 const passport = require('passport')
+require('dotenv').config()
 
-app.use(express.static('public'))
-app.use(helmet());
-// app.use(cookieSession({
-//     name: 'session',
-//     keys: ['lskdfjl;sj;lasjdfl;ajsld;gjasl;djflasjdflsak'], 
-//     maxAge: 14 * 24  * 60 * 60 * 1000
-// }))
-
-app.set('view engine', 'ejs')
-
-app.use(passport.initialize())
-app.use(passport.session())
 
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
 
+app.use(express.static('public'))
+app.use(helmet());
+
+app.set('view engine', 'ejs')
+
+
+app.get('/', (req, res) => {
+    res.render('index')
+})
+
+
+app.use(passport.initialize())
+app.use(passport.session())
+
+
 //routes
 app.use(require('./routes/login'))
+app.use(require('./routes/articles'))
+app.use(require('./routes/comments'))
 
 
 
