@@ -77,7 +77,7 @@ Primary team role: xxx xxx xx xxx x
 - Format login homepage
      * Express for HTTP framework
 
-- Create database in PostgeSQL
+- Create database in PostgreSQL
      * 3 tables with model classes
      * 2 tables related via foreign keys
 
