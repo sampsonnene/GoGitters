@@ -55,19 +55,19 @@ run migration (sequelize db:migrate)
 
 <strong> Bogdan: https://github.com/bblach3 </strong>
 
-Primary team role: xxx, xxx xxx xxx xxx xxx
+Primary team role: Pulling API, What Db we are using
 
 <strong> Destiny: https://github.com/Destinyaaiyana </strong>
 
-Primary team role: xxx, xxx xxx xx xxx xxx
+Primary team role: Doing login js with routes set up
 
 <strong> Anjunique Sampson: https://github.com/sampsonnene </strong>
 
-Primary team role: xxx xxx xx xxx x
+Primary team role: In charge of Github pulling, cloning merging, Gathering info for API
 
 <strong> Jennifer: https://github.com/jgrillo36 </strong>
 
-Primary team role: xxx xxx xx xxx x
+Primary team role: Project Manager
 
 <strong> Lorenzo: https://github.com/WilliamsAL218 </strong>
 
