@@ -39,9 +39,11 @@ run migration (sequelize db:migrate)
 
 #### The requirements for this group project are to generate a webpage using Express and PostgreSQL
 
-## Group Members
-* [The Team](#the-team) 
-* [The Team](#the-team)
+
+<!-- Table of contents -->
+
+## Table of Contents
+* [Team Members](#team-members) 
 * [About the Project](#about-the-project)   
 * [Built With](#built-with)               
 * [MVP (Minimum Viable Product)](#mvp-minimum-viable-product)
@@ -51,7 +53,7 @@ run migration (sequelize db:migrate)
 * [Screenshots](#screenshots)
 
 
-## The Team
+## Team Members
 
 <strong> Bogdan: https://github.com/bblach3 </strong>
 
@@ -71,16 +73,46 @@ Primary team role: Project Manager
 
 <strong> Lorenzo: https://github.com/WilliamsAL218 </strong>
 
-Primary team role: xxx xxx xx xxx x
+Primary team role: HTML, CSS
 
 
-- Format login homepage
-     * Express for HTTP framework
+## About The Project
 
-- Create database in PostgreSQL
-     * 3 tables with model classes
-     * 2 tables related via foreign keys
+We created a website where an "Article of the Day" is generated and the user can read the article and comment if they like. The main page prompts the user to login or register and then they are redirected to the article.
 
-- User login
-     * bcrypt encryption
+
+### Built With
+
+<strong> Tech: </strong>
+
+* JavaScript
+* CSS
+* Node.js
+* Express
+* Sequelize
+* EJS
+
+
+## MVP (Minimum Viable Product):
+
+* Login and registration page for the user with authentication
+* News articles for specific categories
+* Comment box for user
+
+## Stretch Goals
+
+* Like button for users
+
+
+## Challenges and Solutions:
+
+<strong> Challenge: </strong> APIs and stuff
+<strong> Solution: </strong> Teamwork
+
+<strong> Challenge: </strong> xyz
+<strong> Solution: </strong> abcs
+
+## Code Snippets
+
+## Screenshots
 
