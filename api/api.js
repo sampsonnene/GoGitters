@@ -59,10 +59,10 @@ function displayLoop(data){
     let article = {};
     for(let i=0; i < data.length; i++){
         article.title = data[i].title;
-            if image =null {
-
-            }else
-            article.image = data[i].image
+        if (data[i].image === null) {
+            article.image = "../images/article.jpg"
+        }else
+        article.image = data[i].image
 
         article.description = data[i].description
         article.url = data[i].url;
