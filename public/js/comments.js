@@ -64,7 +64,7 @@ const listComments = (records) => {
     //loop through each of db records
     records.data.forEach(commentItem =>{
 
-        // create li tags with db todo items
+        // create li tags with db comment items
         html += `
         <li>
             <div class="row pr-3" id="state-${commentItem.id}">
