@@ -43,7 +43,7 @@ innerHtmlString += `
            <p class="card-text">${event.description}</p>
              </div>
            <div class="card-footer bg-dark border-success"><a href="${event.url}" class="btn btn-dark">Save Article</a></div>
-           </div> `
+           </div> <br>`
 
 })
 
