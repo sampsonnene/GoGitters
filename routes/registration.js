@@ -13,18 +13,19 @@ router.post('/registration', async (req, res) => {
 
     try {
         //get information from header 
-        let { username, password, email } = req.body;
+        let { firstName, lastName, password, email } = req.body;
 
         //hash our password 
         let passwordEncrypted = bcrypt.hashSync(password, 8);
 
         //store username, password, email inside database
 
-        let result = await db.users.create({
-            username: username,
+        let result = await db.user.create({
+            firstName: firstName,
+            lastName: lastName,
             password: passwordEncrypted,
             email: email,
-            roleID: 2
+           
         })
 
         res.redirect('/login')
