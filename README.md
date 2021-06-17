@@ -57,7 +57,7 @@ run migration (sequelize db:migrate)
 
 <strong> Bogdan: https://github.com/bblach3 </strong>
 
-Primary team role: Pulling API, What Db we are using
+Primary team role: API
 
 <strong> Destiny: https://github.com/Destinyaaiyana </strong>
 
@@ -65,7 +65,7 @@ Primary team role: Doing login js with routes set up
 
 <strong> Anjunique Sampson: https://github.com/sampsonnene </strong>
 
-Primary team role: In charge of Github pulling, cloning merging, Gathering info for API
+Primary team role: Github, API
 
 <strong> Jennifer: https://github.com/jgrillo36 </strong>
 
@@ -90,7 +90,7 @@ We created a website where an "Article of the Day" is generated and the user can
 * Node.js
 * Express
 * Sequelize
-* EJS
+* ejs
 
 
 ## MVP (Minimum Viable Product):
