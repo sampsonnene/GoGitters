@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+</head>
+<body>
+    <% data.map(article => {  %>
+        
+        <form>
+         <div class="card border-2 cardshadow" style="width: 18rem; margin: 0.3em;">
+            <% if (article.image === null) { %>
+              <img class="card-img-top" height=150px width=200px src="../images/article.jpg" alt="Card image cap">
+            <% } else { %>           
+             <img class="card-img-top" height=150px width=200px src="<%= article.image %>" alt="Card image cap"> 
+             <% } %>
+           
+            <div class="card-body">
+           <h5 name="title" class="card-title"> <%= article.title %></h5>
+           <p name="description" class="card-text"> <%= article.description %></p>
+   
+             </div>
+             <button id="linkurl" class="card-footer bg-dark border-success urllink"><a href="#" class="btn btn-outline-dark">Save Article</a></button>
+           </div> <br>
+         </form>
+           <% }) %>
+</body>
+</html>

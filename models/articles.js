@@ -21,7 +21,9 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   articles.init({
-    url: DataTypes.STRING
+    url: DataTypes.STRING,
+    title: DataTypes.STRING,
+    description: DataTypes.TEXT
   }, {
     sequelize,
     modelName: 'articles',

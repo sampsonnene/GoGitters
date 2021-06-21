@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Comments Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <script src="https://use.fontawesome.com/b04ddad6c5.js"></script>
+
+    
+</head>
+
+<body>
+
+    <div>
+        <a href="/logout">
+<img src="../images/logout2.png" alt="">
+        </a>
+</div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <h1 id="h3" class="text-center">Article of the Day</h1>
+                <br><br>
+                <div class="row">
+                    <div class="row d-flex">
+                        <div class="col-2"></div>
+                            <div class=" col-8 shadow-lg p-3 mb-5 ms-0 mr-0 bga rounded">
+                                <div id="article" class="text-center headline"> <h4><%= singleArticle.dataValues.title %> </h4></div>
+
+                        <!-- <div id="article" class="text-center"> <%= singleArticle.dataValues.description %> </div> -->
+                            <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-8 d-flex align-content-center">
+                            "<%= singleArticle.dataValues.description %>"
+                            </div>
+                            <div class="col-2"></div>
+                            </div>
+                        <div class="col-2"></div>
+                    </div>
+                        <!-- <a id="article" class="btn text-center" href="<%= singleArticle.dataValues.url %>" >Link to Article</a> -->
+                        <br><br><br>
+                      <div class="text-center">
+                      <a href="<%= singleArticle.dataValues.url %>" class="btn btn-outline-dark shadow-lg btn-lg">Link to Article</a>
+                      </div>  
+
+                    </div> <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+        <!-- end of article -->
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col">
+                <h2 id="h3" class="text-center">User Comments:</h2>
+            </div>
+
+        </div>
+        <!-- end of row -->
+
+        <div class="row">
+            <div class="col">
+                <div class="paper mx-auto my-5 fontStyle">
+                    <form>
+                        <div class="input-group">
+
+                            <textarea name="task" class="form-control"
+                            placeholder="Enter your comment" id="descriptionInput"
+                            aria-label="With textarea"></textarea>
+
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-dark  h-100" type="submit"
+                                    id="button-addon2">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <!-- end of row -->
+
+        <div class="row">
+            <div class="col">
+                <div class="flatPaper mx-auto mb-5 fontStyle">
+                    Comments:
+                    <ul>
+                    
+                      
+                        <!-- <div class="col-2 text-right pr-2">
+                            <button class="button btn">
+                              texttexttext
+                            </button>
+                            <button class="button btn">
+                                <span>
+                                    <i class="fas fa-trash" id="2"></i>
+                                </span>
+                            </button>
+                        </div> -->
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of container-fluid -->
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <script src="/js/comments.js"></script>
+
+</body>
+
+</html>

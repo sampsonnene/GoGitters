@@ -8,7 +8,8 @@ const auth = require('../auth')
 
 
 router.get("/login", (req, res) => {
-    res.render("login");
+
+    res.render("login")
 });
 router.get('/logout', (req, res) => {
     req.logout()
@@ -59,7 +60,21 @@ passport.use(new LocalStrategy({usernameField: "email"},async (username, passwor
     }
 }))
 router.post('/login', passport.authenticate('local', { failureRedirect: '/login' }), (req, res) => {
-    res.send('you made it through')
+    //res.send('you made it through')
+    req.session.is_logged_in = true
+    console.log('session',req.session.is_logged_in);
+    console.log(req.baseUrl)
+    console.log(req.body);
+    res.redirect('/home')
+
+})
+
+router.get('/logout', (req, res) => {
+    req.session.destroy()
+    console.log('req session', req.session.is_logged_in);
+
+    res.redirect('/login')
+
 })
 
 // this function is called after the LocalStrategy has authenticated a user

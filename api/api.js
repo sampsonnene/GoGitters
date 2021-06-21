@@ -10,23 +10,24 @@ var url = api+enterButton+api2
 
 
 fetch(url)
-.then(response=>response.json())
-.then(data=>{
-    // console.log(data.data.length);
-    // console.log("apidata", data);
-    // console.log("it is working >>", data.data[0].title);
-    return displayLoop(data.data);
+    .then(response=>response.json())
+    .then(data=>{
+        // console.log(data.data.length);
+        // console.log("apidata", data);
+        // console.log("it is working >>", data.data[0].title);
+        return displayLoop(data.data);
 
     
    
 
 
-})
-.catch(error => {
-    document.getElementById("error").innerHTML = "Keyword not found. Please try again!";
-    console.log(" error! try again")
-})
+    })
+    .catch(error => {
+        document.getElementById("error").innerHTML = "Keyword not found. Please try again!";
+        console.log(" error! try again")
+    })
 }
+
 
 function displayArticle(article){
   
@@ -41,16 +42,41 @@ innerHtmlString += `
             <div class="card-body">
            <h5 class="card-title">${event.title}</h5>
            <p class="card-text">${event.description}</p>
+
              </div>
-           <div class="card-footer bg-dark border-success"><a href="${event.url}" class="btn btn-dark">Save Article</a></div>
-           </div> <br>`
+             <button id="linkurl" onclick='saveurl(${event.url})' class="card-footer bg-dark border-success urllink"><a href="#" class="btn btn-dark">Save Article</a></button>
+           </div> <br>
+
+           <script>
+           function saveurl() {
+            console.log(url);
+           }
+           </script>
+          
+           `
 
 })
 
+
+// ${event.url}
 location.innerHTML = innerHtmlString;
 
-}
+// if(e.target.className === "urllink"){
+//     let url = e.target.getAttribute('a')
+//     console.log('this is working');
+// }
 
+
+// document.getElementById('test').forEach(button =>{
+//     addEventListener('click', (e)=>{
+//         console.log('this is working');
+//         let url = e.target.getAttribute('urllink')
+//         console.log(url);
+//       })
+// })
+
+
+}
 
 
 function displayLoop(data){
@@ -66,7 +92,6 @@ function displayLoop(data){
 
         article.description = data[i].description
         article.url = data[i].url;
-        console.log(article);
         arr.push(article);
         article = {};
     
@@ -75,3 +100,15 @@ function displayLoop(data){
     }
     displayArticle(arr)
 }
+
+
+
+//<button id="linkurl" onclick='saveurl(${event.url})' class="card-footer bg-dark border-success urllink"><a href="#" class="btn btn-dark">Save Article</a></button>
+//</div> <br>
+//<script>
+//function saveurl() {
+ //console.log(url);
+//}
+//</script>
+
+//<div class="card-footer bg-dark border-success urllink"><a href="#"  class="btn btn-dark urllink">Buy Tickets</a></div>
